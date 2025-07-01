@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://kit.fontawesome.com/a2e0e6c5f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Catálogo</h1>
+    <div class="cart-icon">
+      <i class="fas fa-shopping-cart"></i><span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <section class="filtros">
+  <select id="filtroCategoria">
+    <option value="todas">Todas las categorías</option>
+  </select>
+  <input type="number" id="precioMinimo" placeholder="Precio mínimo" />
+  <input type="number" id="precioMaximo" placeholder="Precio máximo" />
+  <button id="botonFiltrar">Filtrar</button>
+</section>
+
+<main id="contenedorProductos"></main>
+
+<section class="carrito">
+  <h2>Carrito</h2>
+  <ul id="listaCarrito"></ul>
+  <p>Total: $<span id="totalCarrito">0</span></p>
+</section>
+
+<div class="icono-carrito">
+  <i class="fas fa-shopping-cart"></i>
+  <span id="contadorCarrito">0</span>
+</div>
+
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
